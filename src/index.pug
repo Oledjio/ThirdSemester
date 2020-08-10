@@ -4,7 +4,7 @@ block content
   .welcome-section
     section.fullscreen-section.hero
       .container.hero__container
-        header.header
+        header.header.header_marg_bot
           .header__logo
             a.logo(href="") ОС
           .header__menu 
@@ -21,7 +21,8 @@ block content
                 li.socials__item
                   a(href=`${item === 'envelope' ? 'mailto:sabantsev@yandex.ru' : '#'}`).socials__link
                     +icon(item, 'socials__icon')
-
+          a(href="#").gamburger
+            +icon('menu', 'gamburger__icon')
         .hero__content
           .userinfo
             .userinfo__title Личный сайт #[span.userinfo__occ веб разработчика]
@@ -152,7 +153,7 @@ block content
                           +image('content/user.jpg', 'user-min__avatar-pic')
                       .user-min__info
                         .user-min__name Ковальчук Дмитрий
-                        .user-min__occ Основатель Loftschool
+                        .user-min__occ Преподаватель
   footer.footer
     .container.footer__container
       .footer__copyright

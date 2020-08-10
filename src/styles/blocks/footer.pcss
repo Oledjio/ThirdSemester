@@ -116,6 +116,22 @@
     @include tablets {
       margin-bottom: 32px;
     }
+    @include phones{
+      width: 50%;
+      margin-right: 0;
+      &:nth-child(1){
+        order: -30;
+      }
+      &:nth-child(2){
+        order: -40;
+      }
+      &:nth-child(3){
+        order: -10;
+      }
+      &:nth-child(4){
+        order: -20;
+      }
+    }
   }
 }
 

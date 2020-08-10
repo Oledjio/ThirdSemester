@@ -12,11 +12,17 @@
   width: 66%;
   position: relative;
   z-index: 10;
-  height: 340px;
-
+  min-height: 550px;
+  @include desktop{
+    min-height: 395px;
+  }
   @include tablets {
     margin-bottom: 105px;
     width: 86%;
+  }
+  @include phones{
+    width: 100%;
+    height: 180px;
   }
   &:before {
     content: attr(data-slide);
@@ -50,7 +56,8 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
+
 }
 
 .works-slider__fullpic-container {
@@ -64,7 +71,6 @@
 .works-slider__fullpic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .works-slider__thumbs {
@@ -176,6 +182,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 26px;
+  @include phones{
+    margin: 0 auto;
+    margin-bottom: 22px;
+    justify-content: center;
+  }
 }
 
 .works-slider__tag-item {

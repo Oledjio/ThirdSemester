@@ -2,6 +2,9 @@
   margin-bottom: 26px;
   font-size: 24px;
   font-weight: 700;
+  @include tablets{
+    text-align: center;
+  }
 }
 
 .skills-row__list {
@@ -9,6 +12,9 @@
   flex-wrap: wrap;
   margin-left: -4%;
   @include phones {
+    justify-content: center;
+  }
+  @include tablets{
     justify-content: center;
   }
 }
