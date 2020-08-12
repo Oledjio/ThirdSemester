@@ -7,6 +7,9 @@
       border: 1px solid currentColor;
       border-radius: 50%;
       margin-right: 19px;
+      &:hover{
+        border-color: #FF9A00;
+      }
     }
     .socials__icon {
       width: 20px;
@@ -16,9 +19,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    .socials__link{
       &:hover{
+        .socials__icon{
         fill: #FF9A00;
       }
+    }
+    
     }
   }
 }
