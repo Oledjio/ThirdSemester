@@ -7,12 +7,9 @@
       border: 1px solid currentColor;
       border-radius: 50%;
       margin-right: 19px;
-    }
-    .socials__link {
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: relative;
+      &:hover{
+        border-color: #FF9A00;
+      }
     }
     .socials__icon {
       width: 20px;
@@ -23,9 +20,22 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    .socials__link{
+      &:hover{
+        .socials__icon{
+        fill: #FF9A00;
+      }
+    }
+    
+    }
   }
 }
-
+.socials__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .socials__item {
   margin-right: 40px;
   &:last-child {
@@ -37,4 +47,7 @@
   width: 25px;
   height: 25px;
   fill: $text-color;
+  &:hover{
+    fill: #5500F2;
+  }
 }
