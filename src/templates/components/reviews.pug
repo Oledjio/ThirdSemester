@@ -3,7 +3,7 @@ script(type="text/x-template")#reviews
     .reviews__header
       .reviews__title.section-title Что обо мне говорят
       .reviews__buttons
-        button(type="button" @click="previous()" ref="prevButton" :class="{ reviews__btn_disable: position}").reviews__btn.reviews__btn_prev
+        button(type="button" @click="previous()" ref="prevButton").reviews__btn.reviews__btn_prev
         button(type="button" @click="next()" ref="nextButton").reviews__btn.reviews__btn_next
     flickity(ref="flickity" :options="flickityOptions").reviews__content
       .reviews__content-item(v-for="review in reviews")
