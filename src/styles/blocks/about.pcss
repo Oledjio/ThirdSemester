@@ -8,7 +8,7 @@
   }
   @include phones {
     flex-direction: column;
-    padding-top: 114px;
+    padding-top: 0;
     padding-bottom: 114px;
   }
 }
@@ -35,6 +35,9 @@
 .about__desc {
   font-weight: 600;
   margin-bottom: 20px;
+  @include tablets{
+    margin-bottom: 33px;
+  }
 }
 
 .about__title {
@@ -46,6 +49,17 @@
 
 .about__ps {
   font-style: italic;
+  margin-bottom: 36px;
+  @include tablets{
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+}
+.about__text-info{
+  @include tablets{
+    line-height: 24px;
+    font-weight: 600;
+  }
   line-height: 30px;
   position: relative;
   &:before{

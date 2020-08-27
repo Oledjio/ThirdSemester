@@ -19,6 +19,9 @@
   @include desktop {
     padding: 0 10%;
   }
+  @include tablets{
+    align-items: unset;
+  }
 }
 
 .hero__downbutton {
@@ -28,4 +31,7 @@
   right: 0;
   display: flex;
   justify-content: center;
+  @include tablets {
+    display: none;
+  }
 }

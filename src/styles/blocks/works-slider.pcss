@@ -20,6 +20,10 @@
     margin-bottom: 105px;
     width: 86%;
   }
+  @include phones{
+    width: 100%;
+    height: 180px;
+  }
   &:before {
     content: attr(data-slide);
     position: absolute;
@@ -52,7 +56,8 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
+
 }
 
 .works-slider__fullpic-container {
@@ -171,12 +176,18 @@
 .works-slider__thumb-link {
   display: block;
   height: 100%;
+  padding: 0;
 }
 
 .works-slider__tags {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 26px;
+  @include phones{
+    margin: 0 auto;
+    margin-bottom: 22px;
+    justify-content: center;
+  }
 }
 
 .works-slider__tag-item {

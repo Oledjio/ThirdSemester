@@ -3,9 +3,17 @@
   padding-top: 253px;
   padding-bottom: 135px;
 
-  @include phones {
+  @include tablets {
+    background-size: 250%;
+    background-position: top -86px right 53%;
     padding-top: 170px;
     padding-bottom: 110px;
+  }
+  @include phones{
+        background-size: 700%;
+    background-position: top -146px right 39%;
+    padding-top: 150px;
+    padding-bottom: 58px;
   }
 }
 
@@ -18,8 +26,8 @@
 .contacts__about {
   margin-bottom: 190px;
 
-  @include phones {
-    margin-bottom: 150px;
+  @include tablets {
+    margin-bottom: 0;
   }
 }
 

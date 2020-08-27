@@ -12,7 +12,15 @@
 }
 
 .header__buttons {
+  @include tablets{
+    margin-left: 35%;
+  }
   @include phones {
     display: none;
+  }
+}
+.header_marg_bot{
+  @include tablets{
+    margin-bottom: 109px;
   }
 }
